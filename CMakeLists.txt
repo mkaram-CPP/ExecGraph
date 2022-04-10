@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.15)
 #
 
 project(
-  "Project"
+  "ExecGraph"
   VERSION 0.1.0
   LANGUAGES CXX
 )
@@ -234,7 +234,7 @@ else()
   add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 endif()
 
-verbose_message("Project is now aliased as ${PROJECT_NAME}::${PROJECT_NAME}.\n")
+verbose_message("ExecGraph is now aliased as ${PROJECT_NAME}::${PROJECT_NAME}.\n")
 
 #
 # Format the project using the `clang-format` target (i.e: cmake --build build --target clang-format)
